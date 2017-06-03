@@ -2,19 +2,20 @@
 + 网格布局类
 
 ## 规范
-+ 所有类用g-为前缀
++ 本文件夹下所有类用g-为前缀
 
 ## 注意
 + 布局主要使用float
-+ 建议所有g-col中包含子对象div进行操作
++ 建议所有g-col-*中包含子对象div后进行操作，这样避免padding与background带来的一些问题。
 
 ## 主要类介绍
-+ g-row : 所有g-col-*的父类
-+ g-col : 所有列必须包含
-+ g-col-* : width=*/12的列
-+ g-col-$-* : width=*/12的列($:sm,md,lg)
-+ g-offset-* : margin-left=*/12的列
-+ g-offset-$-* : margin-left=*/12的列($:sm,md,lg)
+***(i:1->12,$:sm||md||lg)***
++ ```g-row``` : 所有g-col-*的父类
++ ```g-col``` : 所有单列都必须包含
++ ```g-col-i``` : width=i/12的列
++ ```g-col-$-i``` : width=i/12的响应列
++ ```g-offset-i``` : margin-left=i/12的列
++ ```g-offset-$-i``` : margin-left=i/12的响应列
 
 ## 使用案例
 ```html
