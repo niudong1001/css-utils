@@ -1,0 +1,27 @@
+/*
+响应式
+ */
+@each $bp-name,$bp-size in $bp-maps{
+	@media (min-width: $bp-size){
+		//diaplay
+		.f-dib#{$bp-name} {
+			display: inline-block !important;
+		}
+		.f-db#{$bp-name} {
+			display: block !important;
+		}
+		.f-dn#{$bp-name} {
+			display: none !important;
+		}
+		//text-align
+		.f-tl#{$bp-name} {
+			text-align: left !important;
+		}
+		.f-tc#{$bp-name} {
+			text-align: center!important;
+		}
+		.f-tr#{$bp-name} {
+			text-align: right!important;
+		}
+	}
+}
