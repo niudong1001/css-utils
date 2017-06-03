@@ -1,0 +1,20 @@
+/*
+link
+ */
+@mixin u-amixin($link-color,$link-hover-color){
+	color: $link-color;
+	text-decoration: none;
+	&:hover {
+		color: $link-hover-color;
+		text-decoration: none;
+	}
+}
+.u-a {
+	@include u-amixin($link-color,$text-color); 	
+}
+.u-aback {
+	@include u-amixin($text-color,$link-color); 	
+}
+.u-areset {
+	@include u-amixin($link-color-reset,$link-color-reset); 	
+}

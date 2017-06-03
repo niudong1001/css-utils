@@ -1,0 +1,7 @@
+@mixin m-c($base-color,$h-color){
+	color: $base-color;
+	h1,h2,h3,h4,h5,h6{color: $h-color;}
+}
+.c--primary {
+	@include m-c($text-color,$h-text-color);
+}

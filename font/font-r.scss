@@ -1,0 +1,43 @@
+/*
+font-family
+ */
+@mixin m-ff($ff){
+	font-family: $ff;
+	button,input,textarea,select {
+		font-family: $ff;
+	} 
+}
+.ff--apple {
+	@include m-ff($ff-apple);	
+}
+.ff--helvetica {
+	@include m-ff($ff-helvetica);		
+}
+.ff--noto {
+	@include m-ff($ff-noto);
+}
+/*
+font-size
+ */
+@mixin m-fz($fz,$hfz){
+	font-size: $fz;
+	@each $h,$size in $hfz {
+		#{$h} {
+			font-size: $size;
+		}
+	}
+}
+.fz--primary {
+	@include m-fz($base-size,$base-h-sizes);
+}
+
+/*
+font-weight
+ */
+@mixin m-fw($fw,$hfw){
+	font-weight: $fw;
+	h1,h2,h3,h4,h5,h6{font-weight: $hfw;}
+}
+.fw--primary {
+	@include m-fw($base-weight,$base-h-weight);
+}

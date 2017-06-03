@@ -1,0 +1,40 @@
+/*
+breakpoint
+*/
+/*
+grid
+*/
+/*
+color
+ */
+/*font-family*/
+.u-imgr {
+  width: 100%;
+  max-width: 100%;
+  height: auto; }
+
+/*
+link
+ */
+.u-a {
+  color: #1eaedb;
+  text-decoration: none; }
+  .u-a:hover {
+    color: #111;
+    text-decoration: none; }
+
+.u-aback {
+  color: #111;
+  text-decoration: none; }
+  .u-aback:hover {
+    color: #1eaedb;
+    text-decoration: none; }
+
+.u-areset {
+  color: #111;
+  text-decoration: none; }
+  .u-areset:hover {
+    color: #111;
+    text-decoration: none; }
+
+/*# sourceMappingURL=sets.css.map */

@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/*
+breakpoint
+*/
+/*
+grid
+*/
+/*
+color
+ */
+/*font-family*/
+/*font-size*/
+/*font-weight*/
+/*
+font-family
+ */
+.ff--apple {
+  font-family: Futura, PingFang SC, Lantinghei SC, Microsoft Yahei, sans; }
+  .ff--apple button, .ff--apple input, .ff--apple textarea, .ff--apple select {
+    font-family: Futura, PingFang SC, Lantinghei SC, Microsoft Yahei, sans; }
+
+.ff--helvetica {
+  font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", sans-serif; }
+  .ff--helvetica button, .ff--helvetica input, .ff--helvetica textarea, .ff--helvetica select {
+    font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", sans-serif; }
+
+.ff--noto {
+  font-family: Noto, "华文细黑", "Microsoft Yahei", Arial; }
+  .ff--noto button, .ff--noto input, .ff--noto textarea, .ff--noto select {
+    font-family: Noto, "华文细黑", "Microsoft Yahei", Arial; }
+
+/*
+font-size
+ */
+.fz--primary {
+  font-size: 14px; }
+  .fz--primary h1 {
+    font-size: 32px; }
+  .fz--primary h2 {
+    font-size: 26px; }
+  .fz--primary h3 {
+    font-size: 22px; }
+  .fz--primary h4 {
+    font-size: 18px; }
+  .fz--primary h5 {
+    font-size: 16px; }
+  .fz--primary h6 {
+    font-size: 12px; }
+
+/*
+font-weight
+ */
+.fw--primary {
+  font-weight: 300; }
+  .fw--primary h1, .fw--primary h2, .fw--primary h3, .fw--primary h4, .fw--primary h5, .fw--primary h6 {
+    font-weight: 100; }
+
+/*# sourceMappingURL=sets.css.map */

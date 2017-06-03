@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;EAEE;AAMF;;EAEE;AAMF;;GAEG;AAMH,eAAe;AAKf,aAAa;AAIb,eAAe;AC7Bf,WAAY;EAHX,KAAK,EDoBM,IAAI;ECnBf,8FAAiB;IAAC,KAAK,EDoBV,IAAI",
+"sources": ["../var.scss","color-r.scss"],
+"names": [],
+"file": "sets.css"
+}
