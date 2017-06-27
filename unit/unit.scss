@@ -3,3 +3,33 @@
 	max-width: 100%;
 	height: auto;
 }
+.u-textOverflow {
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.u-scrollBar--style1 {
+	&::-webkit-scrollbar {
+	    width: 8px;
+	    background-color: #FfFfFf;
+	}
+	&::-webkit-scrollbar-thumb {
+	    background-color: #ccc;
+	    border-radius: 10px;
+	}
+	&::-webkit-scrollbar-track {
+	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	    background-color: #F5F5F5;
+	    border-radius: 10px;
+	}
+}
+.u-bzcb {
+	* {
+		box-sizing:content-box;
+	}
+}
+.u-bzbb {
+	* {
+		box-sizing:border-box;
+	}
+}

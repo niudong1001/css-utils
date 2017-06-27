@@ -7,13 +7,16 @@ link
 	&:hover {
 		color: $link-hover-color;
 		text-decoration: none;
+
 	}
 }
 .u-a {
-	@include u-amixin($link-color,$text-color); 	
+	@include u-amixin($link-color,darken($link-color,10%)); 
+	cursor: pointer;	
 }
 .u-aback {
-	@include u-amixin($text-color,$link-color); 	
+	@include u-amixin($text-color,$link-color); 
+	cursor: pointer;
 }
 .u-areset {
 	@include u-amixin($link-color-reset,$link-color-reset); 	

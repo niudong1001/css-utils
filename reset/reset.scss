@@ -5,3 +5,9 @@
 	body {margin: 0;}
 	input,button,select,textarea{outline:none;}
 }
+.reset-ngDialog {
+	.ngdialog.ngdialog-theme-default .ngdialog-content {
+		padding: 0;
+		background-color: transparent;
+	}
+}
