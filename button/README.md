@@ -9,3 +9,4 @@
 + skeleton
 	+ btn-skeleton: base class.
 	+ btn-skeleton--primary: primary style.	
+	+ btn-skeleton--blank: primary style.	

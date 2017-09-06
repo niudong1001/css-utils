@@ -16,6 +16,9 @@ font-family
 .ff--noto {
 	@include m-ff($ff-noto);
 }
+.ff--microYH {
+	@include m-ff($ff-microYH);
+}
 /*
 font-size
  */
@@ -25,6 +28,9 @@ font-size
 		#{$h} {
 			font-size: $size;
 		}
+	}
+	input, textarea, select,button {
+		font-size: $fz;
 	}
 }
 .fz--primary {
@@ -37,6 +43,12 @@ font-weight
 @mixin m-fw($fw,$hfw){
 	font-weight: $fw;
 	h1,h2,h3,h4,h5,h6{font-weight: $hfw;}
+	label {
+		font-weight: $fw;
+	}
+	button {
+		font-weight: $fw+100;
+	}
 }
 .fw--primary {
 	@include m-fw($base-weight,$base-h-weight);

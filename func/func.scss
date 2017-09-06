@@ -96,11 +96,11 @@
 //font-size
 */
 //px
-.f-fz16 {font-size: 16px;}
-.f-fz15 {font-size: 15px;}
-.f-fz14 {font-size: 14px;}
-.f-fz13 {font-size: 13px;}
-.f-fz12 {font-size: 12px;}
+.f-fz16 {font-size: 16px !important;}
+.f-fz15 {font-size: 15px !important;}
+.f-fz14 {font-size: 14px !important;}
+.f-fz13 {font-size: 13px !important;}
+.f-fz12 {font-size: 12px !important;}
 //%
 .f-fz100 {font-size: 100%;}
 .f-fz90 {font-size: 90%;}
@@ -111,11 +111,11 @@
 /*
 //font-weight
 */
-.f-fw100 {font-weight: 100;}
-.f-fw200 {font-weight: 200;}
-.f-fw300 {font-weight: 300;}
-.f-fw400 {font-weight: 400;}
-
+.f-fw100 {font-weight: 100 !important;}
+.f-fw200 {font-weight: 200 !important;}
+.f-fw300 {font-weight: 300 !important;}
+.f-fw400 {font-weight: 400 !important;}
+.f-fw500 {font-weight: 500 !important;}
 /*
 //color
 */
@@ -168,3 +168,10 @@
 //杂项
 */
 .f-bt{border:1px solid #333;}
+
+/*
+cursor
+ */
+.f-cpointer{
+	cursor: pointer;
+}
