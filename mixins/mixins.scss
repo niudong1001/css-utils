@@ -1,27 +1,11 @@
-/*
-font-family
- */
+
+// ff
 @mixin m-ff($ff){
 	font-family: $ff;
 	button,input,textarea,select {
 		font-family: $ff;
-	} 
+	}
 }
-.ff--apple {
-	@include m-ff($ff-apple);	
-}
-.ff--helvetica {
-	@include m-ff($ff-helvetica);		
-}
-.ff--noto {
-	@include m-ff($ff-noto);
-}
-.ff--microYH {
-	@include m-ff($ff-microYH);
-}
-/*
-font-size
- */
 @mixin m-fz($fz,$hfz){
 	font-size: $fz;
 	@each $h,$size in $hfz {
@@ -33,13 +17,6 @@ font-size
 		font-size: $fz;
 	}
 }
-.fz--primary {
-	@include m-fz($base-size,$base-h-sizes);
-}
-
-/*
-font-weight
- */
 @mixin m-fw($fw,$hfw){
 	font-weight: $fw;
 	h1,h2,h3,h4,h5,h6{font-weight: $hfw;}
@@ -50,6 +27,20 @@ font-weight
 		font-weight: $fw+100;
 	}
 }
-.fw--primary {
-	@include m-fw($base-weight,$base-h-weight);
+
+//color
+@mixin m-c($base-color,$h-color){
+	color: $base-color;
+	h1,h2,h3,h4,h5,h6{color: $h-color;}
+}
+
+//link
+@mixin m-link($link-color,$link-hover-color:darken($link-color,5%)){
+	color: $link-color;
+	text-decoration: none;
+	cursor: pointer;
+	&:hover {
+		color: $link-hover-color;
+		text-decoration: underline;
+	}
 }

@@ -1,23 +1,8 @@
 /*
 link
  */
-@mixin u-amixin($link-color,$link-hover-color){
-	color: $link-color;
-	text-decoration: none;
-	&:hover {
-		color: $link-hover-color;
-		text-decoration: none;
+$link-color:$base-primary-color;
 
-	}
-}
-.u-a {
-	@include u-amixin($link-color,darken($link-color,10%)); 
-	cursor: pointer;	
-}
-.u-aback {
-	@include u-amixin($text-color,$link-color); 
-	cursor: pointer;
-}
-.u-areset {
-	@include u-amixin($link-color-reset,$link-color-reset); 	
+.u-link {
+	@include m-link($link-color,darken($link-color,5%));
 }

@@ -1,3 +1,7 @@
+@import "../var";
+
+$btn-hover-color:$base-primary-color;
+
 .btn-skeleton {
 	display: inline-block;
 	padding: .3em 1.5em;
@@ -17,16 +21,16 @@
 }
 .btn-skeleton--primary {
 	color: #fff;
-    background-color:$btn-hover-color;
-    border: 1px solid $btn-hover-color;
-    &:hover {
-    	background-color: darken($btn-hover-color,10%);
-    }
+  background-color:$btn-hover-color;
+  border: 1px solid $btn-hover-color;
+  &:hover {
+  	background-color: darken($btn-hover-color,10%);
+  }
 }
-.btn-skeleton--blank {
+.btn-skeleton--gray {
 	color: $btn-hover-color;
-    border: 1px solid $btn-hover-color;
-    &:hover {
-    	color: darken($btn-hover-color,10%);
-    }
+  border: 1px solid $btn-hover-color;
+  &:hover {
+  	color: darken($btn-hover-color,10%);
+  }
 }

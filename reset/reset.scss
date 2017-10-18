@@ -1,11 +1,11 @@
 /*
 基本重置类
  */
-.reset-normal {
+.reset--primary {
 	body {margin: 0;}
 	input,button,select,textarea{outline:none;}
 }
-.reset-ngDialog {
+.reset--ngDialog {
 	.ngdialog.ngdialog-theme-default .ngdialog-content {
 		padding: 0;
 		background-color: transparent;

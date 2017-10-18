@@ -1,9 +1,6 @@
 /*
 breakpoint
 */
-$bp-sm:550px !default;
-$bp-md:1000px !default;
-$bp-lg:1400px !default;
 $bp-maps:(sm:550px,md:1000px,lg:1400px);
 
 /*
@@ -13,28 +10,28 @@ $total-columns: 12 !default;
 $col-paddingLR: 0 !default;
 $row-paddingLR:0 !default;
 
+/*
+font-size
+ */
+$base-size:14px;
+$base-h-sizes:(h1:32px,h2:26px,h3:22px,h4:18px,h5:16px,h6:12px);
+
+/*
+font-weight
+ */
+$base-weight:400;
+$base-weight--h:300;
 
 /*
 color
  */
-$link-color:#1eaedb;
-$link-color-reset:#333;//重置a标签为这种颜色
-$text-color:#333;
-$h-text-color:#333;
+$base-primary-color:#1eaedb;
+$base-text-color:#333;//重置a标签为这种颜色
 
-/*font-family*/
+/*
+font-family
+ */
 $ff-apple:Futura,PingFang SC, Lantinghei SC, Microsoft Yahei, sans;
 $ff-helvetica:Helvetica, Tahoma, Arial, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", sans-serif;
 $ff-noto:Noto,"华文细黑","Microsoft Yahei",Arial;
 $ff-microYH:"Microsoft YaHei", arial, SimSun, 宋体;
-/*font-size*/
-$base-size:13px;
-$base-h-sizes:(h1:32px,h2:26px,h3:22px,h4:18px,h5:16px,h6:12px);
-
-/*font-weight*/
-$base-weight:400;
-$base-h-weight:300;
-
-/*btn*/
-$btn-hover-color:#33c3f0;
-

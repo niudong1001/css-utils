@@ -7,7 +7,7 @@
 	    	outline: none;
 	    }
 	    &:disabled {
-	    	background-color:#eee; 
+	    	background-color:#eee;
 	    }
 	}
 	input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
@@ -34,9 +34,9 @@
 
 }
 .form-primary {
-	input:-webkit-autofill, 
-	 textarea:-webkit-autofill, 
-	 select:-webkit-autofill { 
-	       -webkit-box-shadow: 0 0 0 1000px white inset; 
+	input:-webkit-autofill,
+	 textarea:-webkit-autofill,
+	 select:-webkit-autofill {
+	       -webkit-box-shadow: 0 0 0 1000px white inset;
 	}
 }

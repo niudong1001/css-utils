@@ -116,6 +116,8 @@
 .f-fw300 {font-weight: 300 !important;}
 .f-fw400 {font-weight: 400 !important;}
 .f-fw500 {font-weight: 500 !important;}
+.f-fw600 {font-weight: 600 !important;}
+.f-fw700 {font-weight: 700 !important;}
 /*
 //color
 */
@@ -152,26 +154,34 @@
 /*
 //border-radius:0;
 */
-.f-br0{border-radius: 0 !important;}
-.f-br4{border-radius: 4px !important;}
+.f-brflat{border-radius: 0 !important;}
+// .f-br4{border-radius: 4px !important;}
 
 /*
 //border
 */
-.f-b0{border: none;}
-.f-bt0 {border-top: none !important;}
-.f-br0 {border-right: none !important;}
-.f-bb0 {border-bottom: none !important;}
-.f-bl0 {border-left: none !important;}
+.f-bnone{border: none;}
+.f-btest{border:1px solid #333;}
+// .f-bt0 {border-top: none !important;}
+// .f-br0 {border-right: none !important;}
+// .f-bb0 {border-bottom: none !important;}
+// .f-bl0 {border-left: none !important;}
 
 /*
-//杂项
-*/
-.f-bt{border:1px solid #333;}
+box-sizing
+ */
+.f-bscontent {box-sizing: content-box;}
+.f-bsborder{box-sizing: border-box;}
 
 /*
 cursor
  */
+.f-cdefault {
+	cursor: default;
+}
 .f-cpointer{
 	cursor: pointer;
+}
+.f-cnotallowed {
+	cursor: not-allowed;
 }
