@@ -1,9 +1,9 @@
-.u-imgr{
+.u-imgr{ // 图像成比例缩放
 	width: 100%;
 	max-width: 100%;
 	height: auto;
 }
-.u-textOverflow {
+.u-textEllipsis { // 溢出加省略号
 	overflow: hidden;
 	text-overflow:ellipsis;
 	white-space: nowrap;
@@ -21,15 +21,5 @@
 	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	    background-color: #F5F5F5;
 	    border-radius: 10px;
-	}
-}
-.u-bscontent {
-	* {
-		box-sizing:content-box;
-	}
-}
-.u-bsborder {
-	* {
-		box-sizing:border-box;
 	}
 }

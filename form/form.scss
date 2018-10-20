@@ -1,3 +1,13 @@
+// 基本的form类添加
+.form-primary {
+	input:-webkit-autofill,
+	 textarea:-webkit-autofill,
+	 select:-webkit-autofill {
+	    -webkit-box-shadow: 0 0 0 1000px white inset;
+	}
+}
+
+// skeleton样式的form
 .form-skeleton {
 	input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea {
 	    -webkit-appearance: none;
@@ -32,11 +42,4 @@
 	    vertical-align: -1px;
 	}
 
-}
-.form-primary {
-	input:-webkit-autofill,
-	 textarea:-webkit-autofill,
-	 select:-webkit-autofill {
-	       -webkit-box-shadow: 0 0 0 1000px white inset;
-	}
 }

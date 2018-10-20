@@ -1,13 +1,9 @@
-## union
-+ 常用基本模块
+# Unit模块类
 
-## rule
-+ 所有本文件夹下面的类都使用```u-```开头
+包含常用的多属性基本模块类。
 
-## classes
-+ unit:
-	+ ```u-imgr```:响应式图片
-+ unit-r:
-	+ ```u-a```:a标签样式
-	+ ```u-aback```:a标签的反样式
-	+ ```u-areset```:重置a标签为无样式
+## 目录
+
+- `u-imgr`: 图像成比例缩放。
+- `u-textEllipsis`: 溢出加省略号。
+- `u-scrollBar--style1`: 重置滚动条样式。

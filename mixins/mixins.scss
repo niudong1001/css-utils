@@ -1,40 +1,5 @@
 
-// ff
-@mixin m-ff($ff){
-	font-family: $ff;
-	button,input,textarea,select {
-		font-family: $ff;
-	}
-}
-@mixin m-fz($fz,$hfz){
-	font-size: $fz;
-	@each $h,$size in $hfz {
-		#{$h} {
-			font-size: $size;
-		}
-	}
-	input, textarea, select,button {
-		font-size: $fz;
-	}
-}
-@mixin m-fw($fw,$hfw){
-	font-weight: $fw;
-	h1,h2,h3,h4,h5,h6{font-weight: $hfw;}
-	label {
-		font-weight: $fw;
-	}
-	button {
-		font-weight: $fw+100;
-	}
-}
-
-//color
-@mixin m-c($base-color,$h-color){
-	color: $base-color;
-	h1,h2,h3,h4,h5,h6{color: $h-color;}
-}
-
-//link
+// link链接设置
 @mixin m-link($link-color,$link-hover-color:darken($link-color,5%)){
 	color: $link-color;
 	text-decoration: none;
@@ -44,3 +9,42 @@
 		text-decoration: underline;
 	}
 }
+
+// 将该类下所有子元素的font-family置为`$ff`值
+@mixin m-ff($ff){
+	font-family: $ff;
+	button, input, textarea, select {
+		font-family: $ff;
+	}
+}
+
+// 设置该类下所有子元素的font-size属性，基本的font-size为`$fz`，标题的`font-size`为`$hfz`
+@mixin m-fz($fz,$hfz){
+	font-size: $fz;
+	input, textarea, select,button {
+		font-size: $fz;
+	}
+	@each $h,$size in $hfz {
+		#{$h} {
+			font-size: $size;
+		}
+	}
+}
+
+// // font-weight
+// @mixin m-fw($fw,$hfw){
+// 	font-weight: $fw;
+// 	h1,h2,h3,h4,h5,h6{font-weight: $hfw;}
+// 	label {
+// 		font-weight: $fw;
+// 	}
+// 	button {
+// 		font-weight: $fw+100;
+// 	}
+// }
+
+// // color
+// @mixin m-c($base-color,$h-color){
+// 	color: $base-color;
+// 	h1,h2,h3,h4,h5,h6{color: $h-color;}
+// }

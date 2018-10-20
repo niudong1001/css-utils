@@ -1,8 +1,0 @@
-/*
-link
- */
-$link-color:$base-primary-color;
-
-.u-link {
-	@include m-link($link-color,darken($link-color,5%));
-}

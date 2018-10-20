@@ -1,27 +1,26 @@
 @import "../var";
-/*
-响应式
- */
+
+// 生成响应式属性函数
 @each $bp-name,$bp-size in $bp-maps{
-	@media (min-width: $bp-size){
-		//diaplay
-		.f-dib#{$bp-name} {
+	@media (min-width: $bp-size){  // 大于min-width会适应改属性
+		//diaplay显示模式控制
+		.f-dib-#{$bp-name} {
 			display: inline-block !important;
 		}
-		.f-db#{$bp-name} {
+		.f-db-#{$bp-name} {
 			display: block !important;
 		}
-		.f-dn#{$bp-name} {
+		.f-dn-#{$bp-name} {
 			display: none !important;
 		}
-		//text-align
-		.f-tl#{$bp-name} {
+		//text-align文字对齐方式控制
+		.f-tl-#{$bp-name} {
 			text-align: left !important;
 		}
-		.f-tc#{$bp-name} {
+		.f-tc-#{$bp-name} {
 			text-align: center!important;
 		}
-		.f-tr#{$bp-name} {
+		.f-tr-#{$bp-name} {
 			text-align: right!important;
 		}
 	}

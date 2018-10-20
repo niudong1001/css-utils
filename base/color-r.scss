@@ -1,8 +1,0 @@
-@import "../var";
-@import "../mixins/style";
-$text-color:$base-text-color;
-$h-text-color:$base-text-color;
-//color
-.c--primary {
-	@include m-c($text-color,$h-text-color);
-}

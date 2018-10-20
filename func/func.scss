@@ -1,14 +1,12 @@
 /*
-//position属性
+position位置控制
 */
 .f-pr{position: relative;}
 .f-pa{position: absolute;}
 .f-pf{position: fixed;}
 
 /*
-//display属性
-//全加important
-//无响应式(手机端优先)
+display显示模式控制
 */
 .f-di{display: inline!important;}
 .f-dib{display: inline-block!important;}
@@ -20,7 +18,7 @@
 //.f-dtc{display: table-cell!important;}
 
 /*
-//浮动与清除浮动
+float&&clear浮动与清除浮动控制
 */
 .f-fl{float: left;}
 .f-fr{float: right;}
@@ -29,9 +27,9 @@
 .f-cf {zoom: 1;}
 
 /*
-//高度与宽度的(百分比表示)
+width&&height宽度与高度控制
 */
-//width
+// width
 .f-w100{width: 100%;}
 .f-w90{width: 90%;}
 .f-w80{width: 80%;}
@@ -44,48 +42,48 @@
 .f-w10{width: 10%;}
 .f-w0{width: 0%;}
 .f-wauto{width: auto;}
-//height
+// height
 .f-h100{height: 100%;}
 .f-h50{height: 50%;}
 .f-h0{height: 0%;}
 .f-hauto{height: auto;}
 
 /*
-//margin padding
+margin&&padding外边距与内边距控制
 */
-//margin
-//0em
+// margin
+/// 0em
 .f-m0{margin: 0;}
 .f-mt0{margin-top: 0;}
 .f-mr0{margin-right: 0;}
 .f-mb0{margin-bottom: 0;}
 .f-ml0{margin-left: 0;}
-//.5em
+/// .5em
 .f-m05{margin: .5em;}
 .f-mt05{margin-top: .5em;}
 .f-mr05{margin-right: .5em;}
 .f-mb05{margin-bottom: .5em;}
 .f-ml05{margin-left: .5em;}
-//1em
+/// 1em
 .f-m1{margin: 1em;}
 .f-mt1{margin-top: 1em;}
 .f-mr1{margin-right: 1em;}
 .f-mb1{margin-bottom: 1em;}
 .f-ml1{margin-left: 1em;}
-//padding
-//0em
+// padding
+/// 0em
 .f-p0{padding: 0;}
 .f-pt0{padding-top: 0;}
 .f-pr0{padding-right: 0;}
 .f-pb0{padding-bottom: 0;}
 .f-pl0{padding-left: 0;}
-//.5em
+/// .5em
 .f-p05{padding: .5em;}
 .f-pt05{padding-top: .5em;}
 .f-pr05{padding-right: .5em;}
 .f-pb05{padding-bottom: .5em;}
 .f-pl05{padding-left: .5em;}
-//1em
+/// 1em
 .f-p1{padding: 1em;}
 .f-pt1{padding-top: 1em;}
 .f-pr1{padding-right: 1em;}
@@ -93,15 +91,15 @@
 .f-pl1{padding-left: 1em;}
 
 /*
-//font-size
+font-size字体大小控制
 */
-//px
+// px
 .f-fz16 {font-size: 16px !important;}
 .f-fz15 {font-size: 15px !important;}
 .f-fz14 {font-size: 14px !important;}
 .f-fz13 {font-size: 13px !important;}
 .f-fz12 {font-size: 12px !important;}
-//%
+// %
 .f-fz100 {font-size: 100%;}
 .f-fz90 {font-size: 90%;}
 .f-fz80 {font-size: 80%;}
@@ -109,7 +107,7 @@
 .f-fz60 {font-size: 60%;}
 
 /*
-//font-weight
+font-weight字体粗细控制
 */
 .f-fw100 {font-weight: 100 !important;}
 .f-fw200 {font-weight: 200 !important;}
@@ -118,8 +116,9 @@
 .f-fw500 {font-weight: 500 !important;}
 .f-fw600 {font-weight: 600 !important;}
 .f-fw700 {font-weight: 700 !important;}
+
 /*
-//color
+color字体颜色控制
 */
 .f-c0{color: #000;}
 .f-c3{color: #333;}
@@ -130,21 +129,22 @@
 .f-cr{color:red;}
 
 /*
-//bg-color
+bg-color背景颜色控制
 */
 .f-bgw{background: white;}
 .f-bgb{background: black;}
 .f-bgr{background: red;}
 
 /*
-//text-align控制
+text-align文字对齐方式控制
 */
 .f-tl{text-align: left;}
 .f-tr{text-align: right;}
 .f-tc{text-align: center;}
+.f-tj{text-align: justify;}
 
 /*
-//vertical控制
+vertical-align竖直对齐控制
 */
 .f-vt{vertical-align: top;}
 .f-vb{vertical-align: bottom;}
@@ -152,47 +152,40 @@
 .f-v1{vertical-align: 1px;}
 
 /*
-//border-radius:0;
+border-radius边框半径控制
 */
-.f-brflat{border-radius: 0 !important;}
-// .f-br4{border-radius: 4px !important;}
+.f-br0{border-radius: 0 !important;}
+.f-br1{border-radius: 1px !important;}
+.f-br2{border-radius: 2px !important;}
+.f-br3{border-radius: 3px !important;}
+.f-br4{border-radius: 4px !important;}
 
 /*
-//border
+border边框控制
 */
-.f-bnone{border: none;}
-.f-btest{border:1px solid #333;}
-// .f-bt0 {border-top: none !important;}
-// .f-br0 {border-right: none !important;}
-// .f-bb0 {border-bottom: none !important;}
-// .f-bl0 {border-left: none !important;}
+.f-b0{border: none!important;}
+.f-bt0 {border-top: none !important;}
+.f-br0 {border-right: none !important;}
+.f-bb0 {border-bottom: none !important;}
+.f-bl0 {border-left: none !important;}
+.f-btest {border:1px solid #333;}
 
 /*
-box-sizing
+box-sizing盒子模型控制
  */
 .f-bscontent {box-sizing: content-box;}
-.f-bsborder{box-sizing: border-box;}
+.f-bsborder {box-sizing: border-box;}
 
 /*
-cursor
+cursor光标控制
  */
-.f-cdefault {
-	cursor: default;
-}
-.f-cpointer{
-	cursor: pointer;
-}
-.f-cnotallowed {
-	cursor: not-allowed;
-}
+.f-cdefault {cursor: default;}
+.f-cpointer{cursor: pointer;}
+.f-cnotallowed {cursor: not-allowed;}
 
-// overlow
-.f-oauto {
-	overflow: auto;
-}
-.f-ohidden {
-	overflow: hidden;
-}
-.f-ovisible {
-	overflow: visible;
-}
+/*
+overflow溢出控制
+ */
+.f-oauto {overflow: auto;}
+.f-ohidden {overflow: hidden;}
+.f-ovisible {overflow: visible;}
