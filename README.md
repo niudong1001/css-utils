@@ -4,9 +4,9 @@
 
 ## 目录说明
 
-- **mixins**: 包含一些有用的mixins，包含如：
+**mixins**: 包含一些有用的mixins，使用方法为：`@include m-fz($base-size,$base-h-sizes)`，包含的mixins有：
 
-```js
+```scss
 // 用以设置`link`链接样式
 @mixin m-link($link-color,$link-hover-color:darken($link-color,5%)){...}
 // 设置该类下所有子元素的`font-family`属性置为`$ff`值
@@ -15,11 +15,9 @@
 @mixin m-fz($fz,$hfz){...}  
 ```
 
-> 使用方法为如：`@include m-fz($base-size,$base-h-sizes)`，这里`$base-size`跟`$base-h-sizes`来自`var.scss`文件
+**base**: 包含一些跟文字，颜色，链接等相关的基本样式类，样式变量参考根目录下文件`var.scss`，包含内容为：
 
-- **base**: 包含一些跟文字，颜色，链接等相关的基本样式类，包含内容为：
-
-```js
+```scss
 // font-family样式设置
 .ff--apple {@include m-ff($ff-apple);}
 .ff--helvetica {@include m-ff($ff-helvetica);}
@@ -29,24 +27,26 @@
 .fz--primary {@include m-fz($base-size,$base-h-sizes);}
 // color设置
 .c--primary {@include m-c($base-text-color, $base-text-color);}
-// link链接设置
+// link链接设置
 .link--primary {@include m-link($base-primary-color);}
 ```
 
-> 样式变量参考根目录下文件`var.scss`
+**func**: 快速调用对应属性与所搭配的常用属性值，例如部分类如下所示：
 
-- **func**: 快速调用对应属性与所搭配的常用属性值，例如部分类如下所示：
-
-```js
-/*
-position位置控制
-*/
+```scss
+// position位置控制
 .f-pr{position: relative;}
 .f-pa{position: absolute;}
 .f-pf{position: fixed;}
+// float&&clear浮动与清除浮动控制
+.f-fl{float: left;}
+.f-fr{float: right;}
+.f-cf:before, .f-cf:after {content: "";display: table;}
+.f-cf:after {clear: both;}
+.f-cf {zoom: 1;}
 ```
 
-- **grid**: 用于自适应布局的网格类，其使用例子如：
+**grid**: 用于自适应布局的网格类，其使用例子如：
 
 ```html
 <div class="g-row">
@@ -63,13 +63,13 @@ position位置控制
 </div>
 ```
 
-- **button**: 存储一些常用的按钮样式类别，样例如下：
+**button**: 存储一些常用的按钮样式类别，样例如下：
 
 ```html
 <button class="btn-skeleton btn-skeleton--primary">skeleton</button>
 ```
 
-- **reset**: 包含一些常用的重置浏览器默认样式的类，文件介绍如下：
+**reset**: 包含一些常用的重置浏览器默认样式的类，文件介绍如下：
 
   - reset: 包含一些常用重置类。
   - normalize: 外部通用重置类，具体可见官网。
