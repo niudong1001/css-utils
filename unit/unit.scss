@@ -1,14 +1,31 @@
-.u-imgr{ // 图像成比例缩放
+// 图像成比例缩放
+.u-imgr{ 
 	width: 100%;
 	max-width: 100%;
 	height: auto;
 }
-.u-textEllipsis { // 溢出加省略号
-	overflow: hidden;
-	text-overflow:ellipsis;
-	white-space: nowrap;
+
+// 清除浮动
+.u-clearfloat {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
 }
-.u-scrollBar--style1 {
+
+// 单行文本的溢出显示省略号
+.u-text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// 自定义滑动bar
+.u-scrollbar--style1 {
 	&::-webkit-scrollbar {
 	    width: 8px;
 	    background-color: #FfFfFf;

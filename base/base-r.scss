@@ -3,16 +3,13 @@
 
 
 // font-family样式设置
-.ff--apple {@include m-ff($ff-apple);}
-.ff--helvetica {@include m-ff($ff-helvetica);}
-.ff--noto {@include m-ff($ff-noto);}
-.ff--yahei {@include m-ff($ff-microYH);}
+.ff--apple {@include m-font-family($ff-apple);}
+.ff--helvetica {@include m-font-family($ff-helvetica);}
+.ff--noto {@include m-font-family($ff-noto);}
+.ff--yahei {@include m-font-family($ff-yahei);}
 
 // font-size样式设置
-.fz--primary {@include m-fz($base-size,$base-h-sizes);}
-
-// color设置
-.c--primary {@include m-c($base-text-color, $base-text-color);}
+.fz--primary {@include m-font-size($base-size,$base-h-sizes);}
 
 // link链接设置
 .link--primary {@include m-link($base-primary-color);}

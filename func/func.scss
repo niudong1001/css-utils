@@ -18,13 +18,10 @@ display显示模式控制
 //.f-dtc{display: table-cell!important;}
 
 /*
-float&&clear浮动与清除浮动控制
+float浮动控制
 */
 .f-fl{float: left;}
 .f-fr{float: right;}
-.f-cf:before, .f-cf:after {content: "";display: table;}
-.f-cf:after {clear: both;}
-.f-cf {zoom: 1;}
 
 /*
 width&&height宽度与高度控制

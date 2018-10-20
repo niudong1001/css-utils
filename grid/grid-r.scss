@@ -1,11 +1,11 @@
 @import "../var";
-@import "../func/style";
+@import "../unit/style";
 
 .g-row {
 	width: 100%;
 	padding-left: $row-lr-padding;
 	padding-right: $row-lr-padding;
-	@extend .f-cf ;
+	@extend .u-clearfloat ;
 }
 .g-col {
 	position: relative;
