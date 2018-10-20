@@ -46,7 +46,7 @@ position位置控制
 .f-pf{position: fixed;}
 ```
 
-- **grid**: 用于自适应布局的网格类，其使用例子如：
+- **grid**: 用于自适应布局的网格类，其使用例子如：
 
 ```html
 <div class="g-row">
