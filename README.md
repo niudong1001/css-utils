@@ -5,19 +5,23 @@
 ## 目录说明
 
 - MIXINS: 一些有用的mixins，包含如：
-  - `m-link($link-color,$link-hover-color:darken($link-color,5%))`: 用以设置`link`链接样式。
-  - `m-ff($ff)`: 设置该类下所有子元素的`font-family`属性置为`$ff`值。
-  - `m-fz($fz,$hfz)`: 设置该类下所有子元素的`font-size`属性，基本的font-size为`$fz`，标题的`font-size`为`$hfz`。
 
-  > 使用方法为如：`@include m-fz($base-size,$base-h-sizes)`
+```js
+m-link($link-color,$link-hover-color:darken($link-color,5%))  // 用以设置`link`链接样式
+m-ff($ff)  // 设置该类下所有子元素的`font-family`属性置为`$ff`值
+m-fz($fz,$hfz)  // 设置该类下所有子元素的`font-size`属性，基本的font-size为`$fz`，标题的`font-size`为`$hfz`
+```
+
+> 使用方法为如：`@include m-fz($base-size,$base-h-sizes)`
 
 - BASE: 包含一些跟文字，颜色，链接等相关的基本样式类，包含内容：
-  - `font-family`字体颜色设置包含如：`ff--apple`, `ff--helvetica`, `ff--noto`, `ff--yahei`。
-  - `font-size`字体大小设置包含如：`fz--primary`。
-  - `color`字体颜色设置包含：`c--primary`。
-  - `a`链接标签设置包含：`link--primary`。
 
-  > 样式变量参考根目录下文件`var.scss`
+  - font-family字体颜色设置包含如：`ff--apple`, `ff--helvetica`, `ff--noto`, `ff--yahei`。
+  - font-size字体大小设置包含如：`fz--primary`。
+  - color字体颜色设置包含：`c--primary`。
+  - a链接标签设置包含：`link--primary`。
+
+> 样式变量参考根目录下文件`var.scss`
 
 - FUNC: 快速调用对应属性与所搭配的常用属性值，例如：
 
@@ -54,6 +58,7 @@ position位置控制
 ```
 
 - RESET: 包含一些常用的重置浏览器默认样式的类，文件介绍如下：
+
   - reset: 包含一些常用重置类。
   - normalize: 外部通用重置类，具体可见官网。
 
