@@ -4,7 +4,7 @@
 
 ## 目录说明
 
-**mixins**: 包含一些常用的mixin，调用方式如：`@include m-opacity(.5)`，主要包含如下类：
+- **mixins**: 包含一些常用的mixin，调用方式如：`@include m-opacity(.5)`，包含如下类：
 
 ```scss
 // a链接样式设置
@@ -23,7 +23,7 @@
 @mixin m-text-ellipsis($line-number) {...}  
 ```
 
-**base**: 包含一些跟文字，颜色，链接等相关的基本样式类，样式变量参考根目录下文件`var.scss`，主要包含如下类：
+- **base**: 包含一些跟文字，颜色，链接等相关的基本样式类，样式变量参考根目录下文件`var.scss`，包含如下类：
 
 ```scss
 // font-family样式设置
@@ -37,7 +37,7 @@
 .link--primary {@include m-link($base-primary-color);}
 ```
 
-**func**: 单值属性函数，可以快速调用对应属性与所搭配的常用属性值，包含的部分类如下所示：
+- **func**: 单值属性函数，可以快速调用对应属性与所搭配的常用属性值，包含的部分类如下所示：
 
 ```scss
 // position位置控制
@@ -49,7 +49,7 @@
 .f-fr{float: right;}
 ```
 
-**unit**: 多值属性单元，可以快速调用对应单元完成一个独立的功能，主要包含如下类：
+- **unit**: 多值属性单元，可以快速调用对应单元完成一个独立的功能，包含如下类：
 
 ```scss
 // 图像成比例缩放
@@ -62,7 +62,7 @@
 .u-scrollbar--style1 {...}
 ```
 
-**grid**: 用于自适应布局的网格类，其使用例子如：
+- **grid**: 用于自适应布局的网格类，其使用例子如：
 
 ```html
 <div class="g-row">
@@ -79,7 +79,7 @@
 </div>
 ```
 
-**reset**: 包含一些常用的重置浏览器默认样式的类，文件介绍如下：
+- **reset**: 包含一些常用的重置浏览器默认样式的类，文件介绍如下：
 
   - reset: 包含一些常用重置类。
   - normalize: 外部通用重置类，具体可见[normalize官网](https://necolas.github.io/normalize.css/)。
