@@ -54,7 +54,7 @@
 - 静态单值属性函数: [func.scss](./func/func.scss)
 - 动态单值属性函数: [func-r.scss](./func/func-r.scss)。
 
-包含类与其功能说明如下所示:
+包含的部分类与其功能说明如下所示:
 
 ```scss
 // position位置控制
