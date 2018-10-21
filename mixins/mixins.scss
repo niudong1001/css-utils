@@ -1,4 +1,4 @@
-// a链接样式设置
+// 类似链接样式设置
 @mixin m-link($link-color,$link-hover-color:darken($link-color,5%)){
 	color: $link-color;
 	text-decoration: none;
@@ -18,8 +18,8 @@
 }
 
 // 设置该类下所有子元素的font-size属性
-// 基本的font-size为`$fz`
-// 标题的`font-size`为`$hfz`
+// 设置基本的font-size为`$fz`
+// 设置标题的font-size为`$hfz`
 @mixin m-font-size($fz,$hfz){
 	font-size: $fz;
 	button, input, textarea, select {
