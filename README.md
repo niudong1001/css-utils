@@ -4,7 +4,7 @@
 
 ## 目录说明
 
-### Mixins混合函数
+### 1. Mixins混合函数
 
 本模块包含一些常用的mixin混合函数，调用方式为`@include m-opacity(.5)`，详细请查看混合函数类: [mixins.scss](./mixins/mixins.scss)。
 
@@ -29,7 +29,7 @@
 @mixin m-text-ellipsis($line-number) {...}  
 ```
 
-### Base基本样式
+### 2. Base基本样式
 
 本模块包含一些跟文字，颜色，链接等相关的基本样式类，样式变量参考根目录下文件`var.scss`，详细请查看类文件:[base-r.scss](./base/base-r.scss)。
 
@@ -47,7 +47,7 @@
 .link--primary {@include m-link($base-primary-color);}
 ```
 
-### Func单值属性函数
+### 3. Func单值属性函数
 
 本模块包含常见的单值属性函数，可以快速调用对应属性与所搭配的常用属性值，详细请查看:
 
@@ -66,7 +66,7 @@
 .f-fr{float: right;}
 ```
 
-### Unit多值属性单元
+### 4. Unit多值属性单元
 
 本模块包含常用的多值属性单元，可以快速调用对应单元模块完成一个独立的功能，详细请查看类文件: [unit.scss](./unit/unit.scss)。
 
@@ -83,7 +83,7 @@
 .u-scrollbar--style1 {...}
 ```
 
-### Grid网格布局
+### 5. Grid网格布局
 
 本模块包含常用的自适应网格布局功能，其采用float属性来实现，详细请参考:[grid-r.scss](./grid/grid-r.scss)。
 
@@ -104,7 +104,7 @@
 </div>
 ```
 
-### Reset重置默认类
+### 6. Reset重置默认类
 
 本模块包含一些常用的重置浏览器默认样式的类，文件介绍如下：
 
