@@ -4,32 +4,35 @@
 
 ## 目录说明
 
-### 1. Mixins混合函数
+### Mixins混合函数
 
 本模块包含一些常用的mixin混合函数，调用方式为`@include m-opacity(.5)`，详细请查看混合函数类: [mixins.scss](./mixins/mixins.scss)。
 
-包含类与其功能说明如下所示:
-
-
+其包含的类与其功能说明如下所示:
 
 ```scss
 // 类似链接样式设置
 @mixin m-link($link-color,$link-hover-color:darken($link-color,5%)){...}
+
 // 设置该类下所有子元素的font-family属性
 @mixin m-font-family($ff){...}
+
 // 设置该类下所有子元素的font-size属性
 // 设置基本的font-size为'$fz'
 // 设置标题的font-size为'$hfz'
 @mixin m-font-size($fz,$hfz){...}
+
 // 设置border-radius
 @mixin m-border-radius($radius) {...}
+
 // 设置opacity
 @mixin m-opacity($opacity) {...}
+
 // 设置多行显示省略号，'$line-number'为行数
 @mixin m-text-ellipsis($line-number) {...}  
 ```
 
-### 2. Base基本样式
+### Base基本样式
 
 本模块包含一些跟文字，颜色，链接等相关的基本样式类，样式变量参考根目录下文件`var.scss`，详细请查看类文件:[base-r.scss](./base/base-r.scss)。
 
@@ -41,15 +44,17 @@
 .ff--helvetica {@include m-font-family($ff-helvetica);}
 .ff--noto {@include m-font-family($ff-noto);}
 .ff--yahei {@include m-font-family($ff-yahei);}
+
 // font-size样式设置
 .fz--primary {@include m-font-size($base-size,$base-h-sizes);}
-// link链接设置
+
+// link链接设置
 .link--primary {@include m-link($base-primary-color);}
 ```
 
-### 3. Func单值属性函数
+### Func单值属性函数
 
-本模块包含常见的单值属性函数，可以快速调用对应属性与所搭配的常用属性值，详细请查看:
+本模块包含常见的**单值属性函数**，可以快速调用对应属性与所搭配的常用属性值，详细请查看:
 
 - 静态单值属性函数: [func.scss](./func/func.scss)
 - 动态单值属性函数: [func-r.scss](./func/func-r.scss)。
@@ -61,29 +66,33 @@
 .f-pr{position: relative;}
 .f-pa{position: absolute;}
 .f-pf{position: fixed;}
+
 // float清除浮动
 .f-fl{float: left;}
 .f-fr{float: right;}
 ```
 
-### 4. Unit多值属性单元
+### Unit多值属性单元
 
-本模块包含常用的多值属性单元，可以快速调用对应单元模块完成一个独立的功能，详细请查看类文件: [unit.scss](./unit/unit.scss)。
+本模块包含常用的**多值属性单元**，可以快速调用对应单元模块完成一个独立的功能，详细请查看类文件: [unit.scss](./unit/unit.scss)。
 
 包含类与其功能说明如下所示:
 
 ```scss
 // 图像成比例缩放
 .u-imgr{...}
+
 // 清除浮动
 .u-clearfloat {...}
+
 // 单行文本的溢出显示省略号
 .u-text-ellipsis {...}
+
 // 自定义滑动bar
 .u-scrollbar--style1 {...}
 ```
 
-### 5. Grid网格布局
+### Grid网格布局
 
 本模块包含常用的自适应网格布局功能，其采用float属性来实现，详细请参考:[grid-r.scss](./grid/grid-r.scss)。
 
@@ -104,7 +113,7 @@
 </div>
 ```
 
-### 6. Reset重置默认类
+### Reset重置默认类
 
 本模块包含一些常用的重置浏览器默认样式的类，文件介绍如下：
 
