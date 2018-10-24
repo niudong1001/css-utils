@@ -4,10 +4,14 @@
 
 ## 目录说明
 
-1. [Mixins混合函数](./mixins/mixins.scss)：本模块包含一些常用的**Mixin混合函数**，调用方式为`@include m-opacity(.5)`，其包含的类与其功能说明如下所示:
+### Mixin混合函数
+
+本模块包含一些常用的mixin混合函数，调用方式为`@include m-opacity(.5)`，详细请查看：[混合函数类](./mixins/mixins.scss)。
+
+包含类与其功能说明如下所示:
 
 ```scss
-// 链接样式类函数
+// 链接样式设置
 @mixin m-link($link-color,$link-hover-color:darken($link-color,5%)){...}
 
 // 设置该类下所有子元素的font-family属性
@@ -28,7 +32,11 @@
 @mixin m-text-ellipsis($line-number) {...}  
 ```
 
-2. [Base基本样式](./base/base-r.scss)：本模块包含一些跟**文字**，**颜色**，**链接**等相关的基本样式类，样式变量参考根目录下文件`var.scss`，包含类与其功能说明如下所示：
+### Base基本样式
+
+本模块包含一些跟文字，颜色，链接等相关的基本样式类，样式变量参考根目录下文件`var.scss`，详细请查看：[基本样式类](./base/base-r.scss)。
+
+包含类与其功能说明如下所示:
 
 ```scss
 // font-family样式设置
@@ -40,15 +48,18 @@
 // font-size样式设置
 .fz--primary {@include m-font-size($base-size,$base-h-sizes);}
 
-// link链接设置
+// link链接设置
 .link--primary {@include m-link($base-primary-color);}
 ```
 
-3. **Func单值属性函数**：本模块包含常见的**单值属性函数**，可以快速调用对应属性与所搭配的常用属性值，包含的文件包括：
+### Func单值属性函数
 
-  - [静态单值属性函数](./func/func.scss)：不依赖`var.scss`。
-  - [动态单值属性函数](./func/func-r.scss)：依赖`var.scss`。  
-    包含的部分类与其功能说明如下所示:
+本模块包含常见的单值属性函数，可以快速调用对应属性与所搭配的常用属性值，详细请查看:
+
+- [静态单值属性函数](./func/func.scss)：不依赖`var.scss`；
+- [动态单值属性函数](./func/func-r.scss)：依赖`var.scss`；
+
+包含的部分类与其功能说明如下所示:
 
 ```scss
 // position位置控制
@@ -61,7 +72,11 @@
 .f-fr{float: right;}
 ```
 
-4. [Unit多值属性单元](./unit/unit.scss)：本模块包含常用的**多值属性单元**，可以快速调用对应单元模块完成一个独立的功能，包含类与其功能说明如下所示:
+### Unit多值属性单元
+
+本模块包含常用的多值属性单元，可以快速调用对应单元模块完成一个独立的功能，详细请查看：[多值属性类](./unit/unit.scss)。
+
+包含类与其功能说明如下所示:
 
 ```scss
 // 图像成比例缩放
@@ -77,7 +92,11 @@
 .u-scrollbar--style1 {...}
 ```
 
-5. [Grid网格布局](./grid/grid-r.scss)：本模块包含常用的自适应网格布局功能，其采用float属性来实现，使用例子如下：
+### Grid网格布局
+
+本模块包含常用的自适应网格布局功能，其采用float属性来实现，详细请参考：[网格布局类](./grid/grid-r.scss)。
+
+使用例子如下:
 
 ```html
 <div class="g-row">
@@ -94,15 +113,12 @@
 </div>
 ```
 
-6. [Reset重置默认类](./reset/reset.scss)：本模块包含一些常用的重置浏览器默认样式的类，如：
+### Reset重置默认类
 
-```scss
-// 基本重置类
-.reset--primary {
-  body {margin: 0;}
-  input,button,select,textarea{outline:none;}
-}
-```
+本模块包含一些常用的重置浏览器默认样式的类，文件介绍如下：
+
+  - reset: 包含一些常用重置类，详细请查看[重置类](./reset/reset.scss)；
+  - normalize: 外部通用重置类，具体可见[Normalize官网](https://necolas.github.io/normalize.css/)；
 
 ## 注意
 
