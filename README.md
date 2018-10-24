@@ -4,7 +4,7 @@
 
 ## 目录说明
 
-1.[Mixins混合函数](./mixins/mixins.scss)：本模块包含一些常用的**Mixin混合函数**，调用方式为`@include m-opacity(.5)`，其包含的类与其功能说明如下所示:
+1. [Mixins混合函数](./mixins/mixins.scss)：本模块包含一些常用的**Mixin混合函数**，调用方式为`@include m-opacity(.5)`，其包含的类与其功能说明如下所示:
 
 ```scss
 // 链接样式类函数
@@ -28,7 +28,7 @@
 @mixin m-text-ellipsis($line-number) {...}  
 ```
 
-2.[Base基本样式](./base/base-r.scss)：本模块包含一些跟**文字**，**颜色**，**链接**等相关的基本样式类，样式变量参考根目录下文件`var.scss`，包含类与其功能说明如下所示：
+2. [Base基本样式](./base/base-r.scss)：本模块包含一些跟**文字**，**颜色**，**链接**等相关的基本样式类，样式变量参考根目录下文件`var.scss`，包含类与其功能说明如下所示：
 
 ```scss
 // font-family样式设置
@@ -44,12 +44,11 @@
 .link--primary {@include m-link($base-primary-color);}
 ```
 
-3.**Func单值属性函数**：本模块包含常见的**单值属性函数**，可以快速调用对应属性与所搭配的常用属性值，包含的文件包括：
+3. **Func单值属性函数**：本模块包含常见的**单值属性函数**，可以快速调用对应属性与所搭配的常用属性值，包含的文件包括：
 
   - [静态单值属性函数](./func/func.scss)：不依赖`var.scss`。
-  - [动态单值属性函数](./func/func-r.scss)：依赖`var.scss`。
-
-  包含的部分类与其功能说明如下所示:
+  - [动态单值属性函数](./func/func-r.scss)：依赖`var.scss`。  
+    包含的部分类与其功能说明如下所示:
 
 ```scss
 // position位置控制
@@ -62,7 +61,7 @@
 .f-fr{float: right;}
 ```
 
-4.[Unit多值属性单元](./unit/unit.scss)：本模块包含常用的**多值属性单元**，可以快速调用对应单元模块完成一个独立的功能，包含类与其功能说明如下所示:
+4. [Unit多值属性单元](./unit/unit.scss)：本模块包含常用的**多值属性单元**，可以快速调用对应单元模块完成一个独立的功能，包含类与其功能说明如下所示:
 
 ```scss
 // 图像成比例缩放
@@ -78,7 +77,7 @@
 .u-scrollbar--style1 {...}
 ```
 
-5.[Grid网格布局](./grid/grid-r.scss)：本模块包含常用的自适应网格布局功能，其采用float属性来实现，使用例子如下：
+5. [Grid网格布局](./grid/grid-r.scss)：本模块包含常用的自适应网格布局功能，其采用float属性来实现，使用例子如下：
 
 ```html
 <div class="g-row">
@@ -95,7 +94,7 @@
 </div>
 ```
 
-6.[Reset重置默认类](./reset/reset.scss)：本模块包含一些常用的重置浏览器默认样式的类，如：
+6. [Reset重置默认类](./reset/reset.scss)：本模块包含一些常用的重置浏览器默认样式的类，如：
 
 ```scss
 // 基本重置类
